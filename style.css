@@ -275,11 +275,6 @@ main {
     align-items: center;
 }
 
-.cv-location::before {
-    content: "•";
-    margin-right: 5px;
-}
-
 .cv-entry-content {
     margin-top: 10px;
     padding-left: 2px;
