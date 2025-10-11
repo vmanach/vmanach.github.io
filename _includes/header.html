@@ -1,0 +1,29 @@
+{% assign current_nav = page.nav | default: '' %}
+<header>
+  <div class="container header-container">
+    <div class="profile-container">
+      <div class="profile-info">
+        <h1>Victor Manach</h1>
+        <p class="title">PhD student at Télécom Paris</p>
+      </div>
+      <div class="profile-image">
+        <img src="/assets/images/profile.webp" alt="Victor Manach" loading="lazy">
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="{% if current_nav == 'home' %}active{% endif %}">
+          <a href="{{ '/' | relative_url }}">Home</a>
+        </li>
+        <li class="{% if current_nav == 'research' %}active{% endif %}">
+          <!-- <a href="{{ '/research.html' | relative_url }}">Research</a> -->
+           <a href="#" class="disabled-link" tabindex="-1" aria-disabled="true">Research</a>
+        </li>
+        <li class="{% if current_nav == 'resume' %}active{% endif %}">
+          <a href="{{ '/resume.html' | relative_url }}">CV</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
