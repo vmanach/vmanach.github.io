@@ -8,10 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.skypack.dev/@hotwired/turbo"></script> -->
-     <script src="https://unpkg.com/@hotwired/turbo@8/dist/turbo.es2017-umd.js" data-turbo-track="reload"></script>
-
+    <script src="https://unpkg.com/@hotwired/turbo@8/dist/turbo.es2017-umd.js" data-turbo-track="reload"></script>
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/favicon/favicon-96x96.png' | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon/favicon.svg' | relative_url }}">
+    <link rel="shortcut icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | relative_url }}">
 </head>
+
 <body>
     {% include header.html %}
     {{ content }}
