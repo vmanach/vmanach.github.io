@@ -289,6 +289,16 @@ main.container {
   border-radius: 6px;
 }
 
+#research_topic .content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#aboutme .content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .s2a sup {
   font-size: 0.68em;
   vertical-align: 0.4em;
